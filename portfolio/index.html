@@ -17,7 +17,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#review">Review</a></li>
+          <li class="pin"><a href="#review">Review</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -25,20 +25,21 @@
     <nav id="hamburger-nav">
       <div class="logo">John Doe</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#review" onclick="toggleMenu()">Review</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <img class="hamburger-icon" src="./assets/icons8-hamburger-menu.svg" alt="Open menu">
+        <img class="close-icon" src="./assets/icons8-close.svg" alt="Close menu">
+        <div class="menu-links" id="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li class="pin"><a href="#review" onclick="toggleMenu()">Review</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
+    
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
@@ -374,10 +375,29 @@
       onclick="location.href='./#contact'"
     />
     </section>
-
+ 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons8-instagram-30.png"
+            alt="Instagram icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="#">Dominic_Adjeh</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons8-twitter-50 (1).png"
+            alt="Twitter icon"
+            class="icon contact-icon"
+          />
+          <p><a href="#">Twitter</a></p>
+        </div>
+      </div>
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -396,6 +416,7 @@
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
+      
     </section>
     <footer>
       <nav>

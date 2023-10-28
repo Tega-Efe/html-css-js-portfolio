@@ -27,7 +27,9 @@ a,
 }
 
 /* DESKTOP NAV */
-
+.pin{
+  display:none;
+}
 nav,
 .nav-links {
   display: flex;
@@ -86,12 +88,7 @@ a:hover {
   cursor: pointer;
 }
 
-.hamburger-icon span {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
-}
+
 
 .menu-links {
   position: absolute;
@@ -118,33 +115,13 @@ a:hover {
   list-style: none;
 }
 
-.menu-links.open {
-  max-height: 300px;
+.close-icon {
+  display: none; /* Initially hidden */
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
-}
 
-.hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
-}
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
-}
 
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
 
 /* SECTIONS */
 
@@ -456,9 +433,9 @@ textarea {
 	margin-bottom: .5rem;
 }
 
-#rev{
+/* #rev{
   margin-left: -46%;
-}
+} */
 
 /* CONTACT */
 

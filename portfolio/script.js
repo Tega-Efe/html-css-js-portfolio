@@ -1,9 +1,26 @@
+const hamburger = document.querySelector(".hamburger-icon");
+const closeIcon = document.querySelector(".close-icon");
+const menuLinks = document.getElementById("menu-links");
+
+hamburger.addEventListener("click", toggleMenu);
+closeIcon.addEventListener("click", toggleMenu);
+
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+  if (menuLinks.style.maxHeight === "0px" || menuLinks.style.maxHeight === "") {
+    // Menu is closed; open it
+    menuLinks.style.maxHeight = "300px"; // Adjust the height as needed
+    hamburger.style.display = "none";
+    closeIcon.style.display = "block";
+  } else {
+    // Menu is open; close it
+    menuLinks.style.maxHeight = "0";
+    hamburger.style.display = "block";
+    closeIcon.style.display = "none";
   }
+}
+
+
+
 
 const allStar = document.querySelectorAll('.rating .star');
 const ratingValue = document.querySelector('.rating input');
@@ -37,8 +54,6 @@ submitButton.addEventListener('click', function (event) {
   if (ratingValue.value && reviewForm.opinion.value.trim() !== '') {
     // You can submit the form here or perform any other action.
     alert('Review submitted successfully.');
-    ratingValue.value = ''; // Clear the rating input
-    reviewForm.opinion.value = ''; // Clear the opinion textarea
     location.reload(); // Reload the page
   } else {
     alert('Please select a rating and provide your opinion.');
@@ -46,9 +61,12 @@ submitButton.addEventListener('click', function (event) {
 });
 
 cancelButton.addEventListener('click', function () {
-  ratingValue.value = ''; // Clear the rating input
-  reviewForm.opinion.value = ''; // Clear the opinion textarea
-  location.href = '#review'; // Reload the page and scroll to the review section
+  // Redirect to the contact section or any other desired action
+  location.href = './#contact';
 });
+
+
+
+
 
 
