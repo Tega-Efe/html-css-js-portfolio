@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -16,6 +17,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#review">Review</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,6 +34,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#review" onclick="toggleMenu()">Review</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -339,9 +342,39 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#review'"
       />
     </section>
+    <section id="review">
+      <p class="section__text__p1">My Testimonial</p>
+      <h1 class="title">Ratings</h1>
+      <div class="wrapper">
+        <h3>Please Leave a review.</h3>
+        <form id="reviewForm" action="#">
+          <div class="rating">
+            <input type="number" name="rating" hidden>
+            <i class='bx bx-star star' style="--i: 0;"></i>
+            <i class='bx bx-star star' style="--i: 1;"></i>
+            <i class='bx bx-star star' style="--i: 2;"></i>
+            <i class='bx bx-star star' style="--i: 3;"></i>
+            <i class='bx bx-star star' style="--i: 4;"></i>
+          </div>
+          <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+          <div class="btn-container">
+            <button id="rev" class="btn btn-color-1" id="submitReview">Submit</button>
+            <button class="btn btn-color-2" id="cancelReview">Cancel</button>
+          </div>
+        </form>
+      </div>
+      
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+    </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
