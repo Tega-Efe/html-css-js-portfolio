@@ -9,6 +9,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  /* background-image: url('./assets/WhatsApp\ Image\ 2023-10-28\ at\ 17.15.47_fd6ec8e6.jpg'); */
+  /* background-image: url('./assets/WhatsApp\ Image\ 2023-10-28\ at\ 17.15.47_e389d05e.jpg'); */
+  
 }
 
 html {
@@ -56,11 +59,7 @@ nav {
   border-radius: 20px;
   box-shadow: 8px 8px 30px rgba(0,0,0,.15);
 }
-#bottom{
-  justify-content: space-around;
-  align-items: center;
-  height: 9vh;
-}
+
 
 .nav-links {
   gap: 2rem;
@@ -93,10 +92,16 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  height: 9vh;
+  background-color: #c3bfbf;
+  box-sizing: border-box;
+  margin: 0 5%;
+  border-radius: 20px;
+  box-shadow: 8px 8px 30px rgba(0,0,0,.15);
 }
 
 .hamburger-menu {
-  background-color: #c3bfbf;
+  /* background-color: #c3bfbf; */
   position: relative;
   display: inline-block;
 }
