@@ -1,25 +1,12 @@
 /* Media queries for responsiveness */
+
+
+
 @media screen and (max-width: 1400px) {
-  .testimonials {
+   .testimonials {
     width: 90%; /* Reduce the width to prevent overlapping */
     margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .testimonials {
-    height: fit-content; /* Adjust the height to fit the content */
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .testimonials-item {
-    padding: 20px; /* Increase padding to improve spacing */
-  }
-}
-
-
-@media screen and (max-width: 1400px) {
+   }
     #profile {
       height: 83vh;
       margin-bottom: 6rem;
@@ -66,6 +53,9 @@
     .about-containers {
       margin-top: 0;
     }
+    .testimonials {
+      height: fit-content; /* Adjust the height to fit the content */
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -82,7 +72,7 @@
     }
     footer nav {
       height: fit-content;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     .about-containers,
     .contact-info-upper-container,
@@ -103,7 +93,7 @@
       font-size: 1.5rem;
     }
     .nav-links {
-      flex-direction: column;
+      /* flex-direction: column; */
       gap: 0.5rem;
       text-align: center;
     }
@@ -120,6 +110,27 @@
     }
     .text-container {
       text-align: justify;
+    }
+    .wrapper{
+      margin-bottom: 20%;
+    }
+    .testimonials-item {
+      padding: 20px; /* Increase padding to improve spacing */
+    }
+
+    .swiper-pagination{
+      margin-bottom: 2%;
+    }
+
+    .down{
+      margin-top: 10%;
+    }
+    .contact-info-upper-container{
+      margin-top: 20%;
+    }
+
+    footer>nav>.nav-links-container>.nav-links{
+      margin-top: 50%;
     }
   }
   
