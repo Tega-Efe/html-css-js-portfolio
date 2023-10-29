@@ -1,3 +1,24 @@
+/* Media queries for responsiveness */
+@media screen and (max-width: 1400px) {
+  .testimonials {
+    width: 90%; /* Reduce the width to prevent overlapping */
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testimonials {
+    height: fit-content; /* Adjust the height to fit the content */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials-item {
+    padding: 20px; /* Increase padding to improve spacing */
+  }
+}
+
+
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
