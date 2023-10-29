@@ -1,3 +1,22 @@
+const swiper = new Swiper('.js-testimonials-slider', {
+  grabCursor: true,
+  spaceBetween: 30,
+  pagination: {
+    el: '.js-testimonials-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+    },
+  },
+  // Enable swipe functionality
+  allowTouchMove: true,
+  // Enable mouse drag
+  mousewheel: true,
+});
+
+
 const hamburger = document.querySelector(".hamburger-icon");
 const closeIcon = document.querySelector(".close-icon");
 const menuLinks = document.getElementById("menu-links");

@@ -53,11 +53,11 @@ nav {
 
 #desktop-nav{
   height: 9vh;
-  background-color: #c3bfbf;
+  background-color: #f5f2f2;
   box-sizing: border-box;
   margin: 0 5%;
   border-radius: 20px;
-  box-shadow: 8px 8px 30px rgba(0,0,0,.15);
+  box-shadow: 5px 5px 8px rgba(0,0,0,.15);
 }
 
 
@@ -97,7 +97,7 @@ a:hover {
   box-sizing: border-box;
   margin: 0 5%;
   border-radius: 20px;
-  box-shadow: 8px 8px 30px rgba(0,0,0,.15);
+  box-shadow: 5px 5px 8px rgba(0,0,0,.15);
 }
 
 .hamburger-menu {
@@ -385,6 +385,7 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
 /* REVIEWS */
 :root {
 	--yellow: #FFBD13;
@@ -462,9 +463,84 @@ textarea {
 	margin-bottom: .5rem;
 }
 
-/* #rev{
-  margin-left: -46%;
-} */
+
+/* SLIDER */
+
+
+
+.container{
+  box-shadow: var(--shadow);
+  border-radius: 0.75rem;
+
+}
+
+
+.testimonials{
+  
+  height: 33vh;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: .75rem;
+}
+.testimonials-item{
+  box-sizing: border-box;
+  padding: 30px ;
+  border-radius: .75rem;
+  background: var(--white);
+	
+}
+
+.testimonials-item .info{
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-item img{
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+
+.testimonials-item .name{
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: hsl(0, 0%, 0%);
+  line-height: 1.2;
+}
+
+.testimonials-item .job{
+  text-transform: capitalize;
+  color: hsl(0, 0%, 0%);
+}
+.testimonials-item p{
+  margin-top: 20px;
+  color: hsl(0, 0%, 0%);
+}
+
+.testimonials-item .rates{
+  margin-top: 15px ;
+  font-size: 14px;
+  color: hsl(36, 88%, 66%);
+}
+
+
+
+.testimonials .swiper-pagination{
+  /* position: relative; */
+  font-size: 40px;
+  bottom: auto;
+  
+}
+
+.testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: hsl(0, 0%, 0%) ;
+}
+
 
 /* CONTACT */
 
@@ -482,7 +558,10 @@ textarea {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
+  /* margin: 4rem auto; */
+  margin: 7% 0 auto auto ;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.5rem;
 }
 
