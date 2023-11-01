@@ -67,6 +67,15 @@
     margin-top: 10%;
   }
 }
+
+@media (max-width: 612px)
+{
+
+  
+  #review{
+    margin-bottom: 35%;
+  }
+}
   @media screen and (max-width: 600px) {
     #contact,
     footer {
