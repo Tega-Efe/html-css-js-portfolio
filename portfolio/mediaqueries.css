@@ -57,7 +57,16 @@
       height: fit-content; /* Adjust the height to fit the content */
     }
   }
-  
+  @media (max-width: 612px)
+{
+  .swiper-pagination{
+    margin-bottom: 10%;
+    
+  }
+  .contact-info-upper-container{
+    margin-top: 10%;
+  }
+}
   @media screen and (max-width: 600px) {
     #contact,
     footer {

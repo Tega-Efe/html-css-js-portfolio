@@ -69,20 +69,50 @@ allStar.forEach((item, idx) => {
 });
 
 submitButton.addEventListener('click', function (event) {
-  // Check if a rating has been selected and an opinion is provided
+  
   if (ratingValue.value && reviewForm.opinion.value.trim() !== '') {
-    // You can submit the form here or perform any other action.
+    
     alert('Review submitted successfully.');
-    location.reload(); // Reload the page
+    ratingValue.value = ''; 
+    reviewForm.opinion.value = ''; 
+    location.href = '#review'; 
   } else {
     alert('Please select a rating and provide your opinion.');
   }
 });
 
 cancelButton.addEventListener('click', function () {
-  // Redirect to the contact section or any other desired action
-  location.href = './#contact';
+  ratingValue.value = ''; 
+  reviewForm.opinion.value = '';
+  location.href = '#review'; 
 });
+// submitButton.addEventListener('click', function () {
+  
+//   // Check if a rating has been selected and an opinion is provided
+//   if (ratingValue.value && reviewForm.opinion.value.trim() !== '') {
+//     // You can submit the form here or perform any other action.
+//     alert('Review submitted successfully.');
+//     location.reload(); // Reload the page
+//   } else {
+//     alert('Please select a rating and provide your opinion.');
+//   }
+// });
+
+// cancelButton.addEventListener('click', function () {
+//   // Redirect to the contact section or any other desired action
+//   location.href = './#contact';
+// });
+
+
+
+const year = document.querySelector('.year');
+
+
+const presentDate = new Date();
+const presentYear = presentDate.getFullYear();
+
+
+year.textContent = presentYear;
 
 
 
